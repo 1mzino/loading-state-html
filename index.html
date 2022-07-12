@@ -6,5 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <svg
+      class="svg"
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 300 300"
+      style="enable-background: new 0 0 300 300"
+      xml:space="preserve"
+    >
+      <style type="text/css">
+        .st0 {
+          fill: #9b9b9b;
+        }
+        .st1 {
+          fill: #ffffff;
+        }
+      </style>
+      <path d="M60.93,37.24" />
+      <path
+        class="st0"
+        d="M193,193h-72c-24.3,0-44-19.7-44-44v0c0-24.3,19.7-44,44-44h72c24.3,0,44,19.7,44,44v0
+	C237,173.3,217.3,193,193,193z"
+      />
+      <circle id="circle1" class="st1" cx="126.5" cy="154.5" r="10.5" />
+      <circle id="circle2" class="st1" cx="156.5" cy="154.5" r="10.5" />
+      <circle id="circle3" class="st1" cx="184.5" cy="154.5" r="10.5" />
+    </svg>
+  </body>
 </html>
+
+<style>
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .svg {
+    height: 250px;
+    width: 250px;
+  }
+
+  #circle1 {
+    animation: 1s ease-in-out infinite bounce;
+  }
+
+  #circle2 {
+    animation: 1s ease-in-out infinite bounce;
+    animation-delay: 0.2s;
+  }
+
+  #circle3 {
+    animation: 1s ease-in-out infinite bounce;
+    animation-delay: 0.4s;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5%);
+    }
+
+    50% {
+      transform: translateY(0%);
+    }
+  }
+</style>
